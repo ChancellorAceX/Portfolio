@@ -33,7 +33,7 @@ class App extends Component {
               <Route path='/projects'>
                 <Projects />
               </Route>
-              <Route path='/'>
+              <Route path='*'>
                 <Main />
               </Route>
             </Switch>

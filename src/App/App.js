@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route, withRouter } from 'react-router
 import './App.css';
 import Header from '../Components/Header/Header';
 import Footer from '../Components/Footer/Footer';
+import ProjectObject from '../Resources/ProjectObject';
 import Projects from '../Routes/Projects/Projects';
 import Main from '../Routes/Main/Main';
 import AboutMe from '../Routes/AboutMe/AboutMe';
@@ -14,11 +15,13 @@ class App extends Component {
     this.state = {
       match: PropTypes.object.isRequired,
       location: PropTypes.object.isRequired,
-      history: PropTypes.object.isRequired
+      history: PropTypes.object.isRequired,
+      projectImages: ProjectObject.map(project=>require(`../Resources/Images/${project.image}`))
     };
   };
 
   render() {
+    console.log(this.state.projectImages)
     return (
       <Router>
         <div className="App">
@@ -31,7 +34,7 @@ class App extends Component {
                 <AboutMe />
               </Route>
               <Route path='/projects'>
-                <Projects />
+                <Projects projectImages={this.state.projectImages}/>
               </Route>
               <Route path='*'>
                 <Main />

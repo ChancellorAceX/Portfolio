@@ -12,7 +12,7 @@ export default function Project(props) {
         </Fade>
         <Fade delay={400} key='image'>
           <figure>
-            <img className='projectimg' src={require(`../../Resources/Images/${props.project.image}`)} alt={props.project.imageAlt} />
+            <img className='projectimg' src={props.projectImages[props.index]} alt={props.project.imageAlt} />
             <figcaption>{props.project.imageCaption}</figcaption>
           </figure>
         </Fade>

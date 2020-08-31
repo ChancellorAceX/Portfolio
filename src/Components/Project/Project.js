@@ -1,5 +1,5 @@
 import React from 'react';
-import { Fade } from 'react-awesome-reveal';
+import { Fade, Pulse } from 'react-awesome-reveal';
 import Icon from '../Icon/Icon';
 
 export default function Project(props) {
@@ -27,8 +27,10 @@ export default function Project(props) {
         </Fade>
         <Fade delay={600}>
           <section className='buttonBox'>
-            <button className='repolink button' id='bookmarkRepo' value={props.project.repo} onClick={() => window.open(props.project.repo, `${props.project.title} - repository`)}>Project Repository</button>
-            <button className='livelink button' id='bookmarkLive' value={props.project.live} onClick={()=>window.open(props.project.live,`${props.project.title}`)}>View Product</button>
+            <button className='repolink button' id='bookmarkRepo' value={props.project.repo} onClick={() => window.open(props.project.repo, `${props.project.title} - repository`)}>
+              Project Repository
+              </button>
+            <button className='livelink button' id='bookmarkLive' value={props.project.live} onClick={() => window.open(props.project.live, `${props.project.title}`)}>View Product</button>
           </section>
         </Fade>
       </section>

@@ -89,6 +89,14 @@ figcaption {
   margin-right: 1vw;
 }
 
+button:hover {
+  background-color:black;
+}
+
+button:active {
+  background-color:white;
+}
+
 @media (min-width: 760px) {
   .icon-box *{
     font-size: 20px;

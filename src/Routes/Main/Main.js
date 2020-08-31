@@ -1,6 +1,7 @@
 import React from 'react';
 import './Main.css';
 import { Fade } from 'react-awesome-reveal';
+import Image from '../../Resources/Images/PersonalImage.JPG';
 
 export default function Main() {
   return (
@@ -11,7 +12,7 @@ export default function Main() {
       </p>
       </Fade>
       <Fade>
-        <img src={require('../../Resources/Images/PersonalImage.JPG')} className='myself' alt='Adam Brown' />
+        <img src={Image} className='myself' alt='Adam Brown' />
       </Fade>
       <Fade>
         <p className='about name'>

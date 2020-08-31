@@ -10,9 +10,9 @@ function Projects(props) {
     <>
       {ProjectObject.map((project, i) => {
         return (
-          // <Fade>
+          <Fade cascade fraction={0.01} delay={100} key={project.title}>
             <Project project={project} key={project.title} last={i === ProjectObject.length - 1} />
-          // </Fade>
+          </Fade>
         );
       })
       }

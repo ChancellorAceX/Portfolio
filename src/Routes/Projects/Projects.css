@@ -75,7 +75,18 @@ figcaption {
   height:3px;
   width:80vw;
   background-color: #007BB5;
-  margin:5vh;
+  margin-top:5vh;
+  margin-bottom:5vh;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.icon-box div * {
+  margin:0;
+}
+
+.icon-box div {
+  margin-right: 1vw;
 }
 
 @media (min-width: 760px) {

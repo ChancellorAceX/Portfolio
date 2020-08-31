@@ -2,11 +2,15 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { BrowserRouter as Router, Switch, Route, withRouter } from 'react-router-dom';
 import './App.css';
-import Header from '../Components/Header/Header';
-import Footer from '../Components/Footer/Footer';
-import Projects from '../Routes/Projects/Projects';
-import Main from '../Routes/Main/Main';
-import AboutMe from '../Routes/AboutMe/AboutMe';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
+import Projects from '../../Routes/Projects/Projects';
+import Main from '../../Routes/Main/Main';
+import AboutMe from '../../Routes/AboutMe/AboutMe';
+import BattleSource from '../../Resources/Images/BattleSource.PNG';
+import Cursr from '../../Resources/Images/Cursr.PNG';
+import Bookmark from '../../Resources/Images/Bookmark.PNG';
+import Quiz from '../../Resources/Images/Quiz.PNG';
 
 class App extends Component {
   constructor(props) {
@@ -15,7 +19,7 @@ class App extends Component {
       match: PropTypes.object.isRequired,
       location: PropTypes.object.isRequired,
       history: PropTypes.object.isRequired,
-      projectImages: [require('../Resources/Images/BattleSource.PNG'),require('../Resources/Images/Cursr.PNG'),require('../Resources/Images/Bookmark.PNG'),require('../Resources/Images/Quiz.PNG')],
+      projectImages: [BattleSource, Cursr, Bookmark, Quiz],
     };
   };
 

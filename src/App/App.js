@@ -16,7 +16,7 @@ class App extends Component {
       location: PropTypes.object.isRequired,
       history: PropTypes.object.isRequired
     };
-  }
+  };
 
   render() {
     return (

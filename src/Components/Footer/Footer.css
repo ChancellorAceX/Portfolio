@@ -1,31 +1,50 @@
 footer {
+  bottom:0;
   width:100vw;
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
   align-items: center;
+  justify-content: space-evenly;
   background-color:#261E2B;
-  padding: 10px;
-  min-height: 7.5vh;
+  height: 12.5vh;
 }
 
 footer *{
-  margin: 5px;
+  margin-left:5px;
+  margin-right:5px;
 }
 
 h5 {
-  margin-bottom: 0;
+  margin:0;
 }
 
 .address {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   margin-top:0;
 }
 
+.email {
+  margin:5px;
+}
 
-@media (min-width:1025px) {
+@media (min-width:768px) {
+  footer i {
+    margin-left: 30px;
+  }
+  h5 {
+    margin-right:30px;
+  }
+  footer {
+    flex-direction:row;
+    height:7.5vh;
+  }
+}
+
+@media (min-width:1024px) {
   footer *{
     font-size: 25px;
   }
+
 }

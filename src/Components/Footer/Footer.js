@@ -8,7 +8,6 @@ export default function Header(props) {
   return (
     <>
       <h5>© Adam Brown 2020</h5>
-      <p><i>adam.edward.brown@gmail.com</i></p>
       <section className='address'>
         <a href='mailto:adam.edward.brown@gmail.com' aria-label='email'><FontAwesomeIcon icon={faEnvelope} /></a>
         <section className='socialLinks'>
@@ -20,6 +19,7 @@ export default function Header(props) {
           </a>
         </section>
       </section>
+      <p className='email'><i>adam.edward.brown@gmail.com</i></p>
     </>
   );
 }

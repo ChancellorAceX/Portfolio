@@ -1,13 +1,13 @@
 header {
+  position: fixed;
   margin:0;
   top:0;
   padding:0;
   height:7.5vh;
   width:100vw;
-  position:fixed;
-  border: 1px solid black;
   background-color: #261E2B;
   font-size: 15px;
+  z-index: 1000;
 }
 
 ul {
@@ -50,7 +50,7 @@ a {
   }
 }
 
-@media (min-width:1025px) {
+@media (min-width:1024px) {
   header {
     display:flex;
     justify-content: center;

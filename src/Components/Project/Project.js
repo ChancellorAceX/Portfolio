@@ -17,7 +17,7 @@ export default function Project(props) {
           )}
         </section>
         <section className='buttonBox'>
-          <button className='repolink button' id='bookmarkRepo' value={props.project.repo}>Project Repository</button>
+          <button className='repolink button' id='bookmarkRepo' value={props.project.repo} onClick={()=>window.open=props.project.repo}>Project Repository</button>
           <button className='livelink button' id='bookmarkLive' value={props.project.live}>View Product</button>
         </section>
       </section>

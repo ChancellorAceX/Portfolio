@@ -6,7 +6,7 @@ export default function Header(props) {
   return (
     <ul className='navbar'>
       <li className='name' id='name' key='name'>
-        <Link to='/'>
+        <Link to='/Portfolio'>
           <p className='header-button'>Adam Brown</p>
         </Link>
       </li>

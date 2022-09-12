@@ -24,7 +24,7 @@ class App extends Component {
   };
 
   render() {
-    console.log(this.state.projectImages)
+    console.log(this.state.projectImages);
     return (
       <Router>
         <div className="App">
@@ -37,7 +37,7 @@ class App extends Component {
                 <AboutMe />
               </Route>
               <Route path='/projects'>
-                <Projects projectImages={this.state.projectImages}/>
+                <Projects projectImages={this.state.projectImages} />
               </Route>
               <Route path='*'>
                 <Main />
@@ -54,3 +54,5 @@ class App extends Component {
 }
 
 export default withRouter(App);
+
+

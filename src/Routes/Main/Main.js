@@ -8,7 +8,7 @@ export default function Main() {
     <>
       <Fade>
         <p className='about name'>
-          Hey there, I'm Adam. I'm an aspiring developer with a background in Biomedical Engineering.
+          Hey there, I'm Adam. I'm a software developer with a background in Biomedical Engineering.
       </p>
       </Fade>
       <Fade>

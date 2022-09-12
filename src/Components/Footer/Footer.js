@@ -7,7 +7,7 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 export default function Header(props) {
   return (
     <>
-      <h5>© Adam Brown 2020</h5>
+      <h5>© Adam Brown 2022</h5>
       <section className='address'>
         <a href='mailto:adam.edward.brown@gmail.com' aria-label='email'><FontAwesomeIcon icon={faEnvelope} /></a>
         <section className='socialLinks'>

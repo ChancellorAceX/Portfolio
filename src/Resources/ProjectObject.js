@@ -12,7 +12,7 @@ const Projects = [
     title: 'Cursr',
     image: 'Cursr.PNG',
     imageAlt: 'Cursr Screenshots',
-    imageCaption: `How many people tell you that you have to manage your anger? Well, with Cursr we give you a free, safe, anonymous method to vent your anger out into the world. When you feel like you need to vent your anger, you can let yourself be heard. Put a curse into the system and one random person will see it and "bless" it. After which you'll be notified of their blessing, and the curse disappeares forever`,
+    imageCaption: `How many people tell you that you have to manage your anger? Well, with Cursr we give you a free, safe, anonymous method to vent your anger out into the world. When you feel like you need to vent your anger, you can let yourself be heard. Put a curse into the system and one random person will see it and "bless" it. After which you'll be notified of their blessing, and the curse disappeares forever. **Backend Disconnected**`,
     tech: ['html5', 'css3', 'javascript', 'react' , 'node.js' , 'expressjs' , 'postgresql' ],
     repo: 'https://github.com/thinkful-ei-macaw/Capstone-3-OABKT---Client',
     live: 'https://capstone-3-oabkt.vercel.app/'
